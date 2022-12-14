@@ -1,0 +1,158 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+
+:root {
+  --clr-primary-400: hsl(256, 34%, 28%);
+  --clr-secondary-300: hsl(243, 38%, 52%);
+
+  --clr-neutral-400: hsl(0, 0%, 51%);
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-900: hsl(0, 0%, 0%);
+
+  --ff-base: "Poppins", serif;
+}
+
+/*
+    Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+    Allow percentage-based heights in the application
+*/
+html,
+body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+   Add accessible line-height
+   Improve text rendering
+*/
+body {
+  line-height: 1.5;
+}
+/*
+   Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+   Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+   Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+.container {
+  padding: 3rem 0 0 6rem;
+  font-family: var(--ff-base);
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.navbar-container img {
+  height: 2rem;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  color: var(--clr-neutral-400);
+}
+
+.list-item:first-child {
+  color: var(--clr-neutral-900);
+  font-weight: 500;
+}
+
+.button-group {
+  margin: 0 7rem 0 auto;
+}
+
+.nav-button {
+  background-color: var(--clr-secondary-300);
+  color: var(--clr-neutral-100);
+  border: none;
+  font-size: 1rem;
+  padding: 0.8rem 1.4rem;
+  border-radius: 0.5rem;
+}
+
+.banner-container {
+  display: flex;
+}
+.banner-container div {
+  width: 50%;
+}
+
+.banner-container div,
+h1,
+p {
+  margin: 2rem 0;
+}
+
+.heading-text {
+  margin-top: 5rem;
+  font-size: 4rem;
+  line-height: 5rem;
+  word-spacing: 1rem;
+  width: 90%;
+  color: var(--clr-primary-400);
+}
+
+.heading-text span {
+  color: var(--clr-secondary-300);
+}
+
+.description {
+  font-size: 1rem;
+  width: 55%;
+  color: var(--clr-neutral-400);
+}
+
+.btn {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  width: 14rem;
+  height: 4rem;
+}
+
+.banner-container img {
+  height: 36rem;
+}
